@@ -10,11 +10,11 @@ userRouter.get(
   passport.authenticate("jwt", { session: false }),
   async (req, res, next) => UserController.get(req, res, next)
 );
-userRouter.post("/api/user", async (req, res, next) =>
+userRouter.post("/api/users", async (req, res, next) =>
   UserController.register(req, res, next)
 );
 userRouter.get(
-  "/api/user/verify/:email/:register_token",
+  "/api/users/verify/:email/:register_token",
   async (req, res, next) => UserController.verify(req, res, next)
 );
 

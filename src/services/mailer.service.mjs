@@ -24,7 +24,7 @@ const MailerService = {
       subject: "Account Activation",
       html: `<html><body>Please activate your account. If you feel you are not registered, please ignore this message. Press <a href="${
         AppConfig.Server.baseFrontendUrl
-      }/api/user/verify/${email}/${registerToken}">Verify Email</a> to verify, only valid for ${
+      }/api/users/verify/${email}/${registerToken}">Verify Email</a> to verify, only valid for ${
         Number(AppConfig.JWT.registerTokenMaxAge) / 60
       } minutes.</body></html>`,
     };
