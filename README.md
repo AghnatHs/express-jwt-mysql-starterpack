@@ -15,7 +15,7 @@ npm install
 ```sql
 CREATE TABLE `users` (
   `id` varchar(255) NOT NULL,
-  `email` varchar(320) CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL DEFAULT '' UNIQUE,
+  `email` varchar(320) CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL DEFAULT '',
   `password` varchar(255) NOT NULL,
   `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `updated_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
